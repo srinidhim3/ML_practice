@@ -12,13 +12,16 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import LinearRegression
 poly_reg = PolynomialFeatures(degree=4)
+print(X_train)
 x_poly = poly_reg.fit_transform(X_train)
+print(x_poly)
 regressor = LinearRegression()
 regressor.fit(x_poly, y_train)
 
 y_pred = regressor.predict(poly_reg.transform(X_test))
 np.set_printoptions(precision=2)
-print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)),1))
+#print(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)),1))
 
 from sklearn.metrics import r2_score
 print(r2_score(y_test, y_pred))
+#0.9458193347147953
