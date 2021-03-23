@@ -23,4 +23,14 @@ Hierarchical clustering : two types are Agglomerative and Divisive. below steps 
         4. distance between centroid.
     
     Dendograms : Memory of hierarchical model. The distance between two data point/clusters is proportional to the height of dendograms plot. by setting the height level threshold we can decide how many clusters we need. if the threshold level is disected by two lines then the total number of clusters will be two.
+
+Association Rule learning (Apriori): People who bought also bought. 
+    Apriori Support : People who watched movie 1 also watched movie 2
+    Apriori Confidence : percentage of people who watched movie 2 
+    Apriori lift : percentage of possible suggestion of movie 2 to the people who watched movie 1 already.
+
+    Step 1 : set a minimum support and confidence
+    Step 2 : take all the subsets in transactions having higher support than minimum support.
+    Step 3 : take all the rules of these subsets having higher confidence than minimun confidence.
+    Step 4 : sort the rules by decreasing lift.
     
