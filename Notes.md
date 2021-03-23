@@ -33,4 +33,10 @@ Association Rule learning (Apriori): People who bought also bought.
     Step 2 : take all the subsets in transactions having higher support than minimum support.
     Step 3 : take all the rules of these subsets having higher confidence than minimun confidence.
     Step 4 : sort the rules by decreasing lift.
-    
+
+Association Rule learning (Eclat) : 
+    Eclat Support : users watchlist containing M / users watchlist
+
+    Step 1 : set a minimum support
+    Step 2 : Take all the subsets in transactions having higher support than minimun support.
+    Step 3 : sort these subsets by decreasing support.
