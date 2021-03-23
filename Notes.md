@@ -9,3 +9,18 @@ k-means clustering
     Random Initialization Trap : the selection of centroid at the beginning of algorithm dictates the output. To correct this we need to use K-Means++ algorithm. There is no need to implement k-means ++ because its taken care of by library.
 
     Choosing right number of clusters : WCSS (Within Cluster Sum of Squares) Square of Distance between taken point to centroid. selecting more clusters will result in less value of WCSS. the upper limit to select the number of clusters is number of data points which would lead us to see WCSS as zero. To get optimal number of clusters we need to use Elbow method. its the value change in WCSS while increasing the number of clusters.
+
+Hierarchical clustering : two types are Agglomerative and Divisive. below steps are for Agglomerative.
+    step 1 : make each data point a single point cluster that forms N clusters.
+    step 2 : Take two closest data points and make them one cluster, that forms N-1 clusters.
+    step 3 : take two closest clusters and make them one cluster, that forms N-2 clusters.
+    step 4 : repeat step 3 until there is only one cluster.
+
+    Euclidean distance is used for calculating the distance between data points/clusters. Distance between clusters can be calculated in multiple ways.
+        1. Closest points
+        2. Furthest points
+        3. Average distance
+        4. distance between centroid.
+    
+    Dendograms : Memory of hierarchical model. The distance between two data point/clusters is proportional to the height of dendograms plot. by setting the height level threshold we can decide how many clusters we need. if the threshold level is disected by two lines then the total number of clusters will be two.
+    
