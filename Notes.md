@@ -44,11 +44,14 @@ Association Rule learning (Eclat) :
 Reinforcement Learning:
     Reinforcement Learning is a powerful branch of Machine Learning. It is used to solve interacting problems where the data observed up to time t is considered to decide which action to take at time t + 1. It is also used for Artificial Intelligence when training machines to perform tasks such as walking. Desired outcomes provide the AI with reward, undesired with punishment. Machines learn through trial and error.
 
-    In this part, you will understand and learn how to implement the following Reinforcement Learning models:
+    In this part, you will understand and learn how to implement the following Reinforcement Learning models: 
         1. Upper Confidence Bound (UCB)
             Initial round we will start with default confidence level. as the go through more rounds this level is adjusted based on reward.
             confidence bound is also adjusted based on reward. we start the next round with highest confidence bound. when the bound decrease to a minimum level then we will select that option.
-        2. Thompson Sampling
+        2. Thompson Sampling : probablistic models
+            we are not trying to guess the distributions behind the machines/data set. 
+            every round there will be a feedback using which something new learnt. meaning the distribution is adjusted.
+
 
     The Multi-Armed Bandit Problem : used to train robot dogs to walk using reinforcement learning. finding the best outcome out of many options available. 
         1. We have d arms. for example, arms are ads that we display to users each time they connect to a web page.
@@ -57,3 +60,16 @@ Reinforcement Learning:
         4. At each round n, ad i gives reward. 1 if the user clicks on the ad i, 0 if the user didn't.
         5. our goal is to maximize the total reward we get over many rounds.
 
+    UCB vs Thompson sampling :
+        1. UCB is deterministic model. but thompson is more of probabilistic.
+        2. UCB requires update at every round. Thompson can accommodate delayed feedback.
+        3. Thompson has better empricial evidence.
+
+Natural Language Processing
+    Natural Language Processing (or NLP) is applying Machine Learning models to text and language. Teaching machines to understand what is said in spoken and written word is the focus of Natural Language Processing. Whenever you dictate something into your iPhone / Android device that is then converted to text, that’s an NLP algorithm in action.You can also use NLP on a text review to predict if the review is a good one or a bad one. You can use NLP on an article to predict some categories of the articles you are trying to segment. You can use NLP on a book to predict the genre of the book. And it can go further, you can use NLP to build a machine translator or a speech recognition system, and in that last example you use classification algorithms to classify language. Speaking of classification algorithms, most of NLP algorithms are classification models, and they include Logistic Regression, Naive Bayes, CART which is a model based on decision trees, Maximum Entropy again related to Decision Trees, Hidden Markov Models which are models based on Markov processes.A very well-known model in NLP is the Bag of Words model. It is a model used to preprocess the texts to classify before fitting the classification algorithms on the observations containing the texts.
+
+    Exampels
+        1. if / else rules for chatbots
+        2. Audio frequency components and analysis for speech recognition
+        3. Bag-of-words model for classification.
+        
