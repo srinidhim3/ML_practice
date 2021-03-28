@@ -40,3 +40,20 @@ Association Rule learning (Eclat) :
     Step 1 : set a minimum support
     Step 2 : Take all the subsets in transactions having higher support than minimun support.
     Step 3 : sort these subsets by decreasing support.
+
+Reinforcement Learning:
+    Reinforcement Learning is a powerful branch of Machine Learning. It is used to solve interacting problems where the data observed up to time t is considered to decide which action to take at time t + 1. It is also used for Artificial Intelligence when training machines to perform tasks such as walking. Desired outcomes provide the AI with reward, undesired with punishment. Machines learn through trial and error.
+
+    In this part, you will understand and learn how to implement the following Reinforcement Learning models:
+        1. Upper Confidence Bound (UCB)
+            Initial round we will start with default confidence level. as the go through more rounds this level is adjusted based on reward.
+            confidence bound is also adjusted based on reward. we start the next round with highest confidence bound. when the bound decrease to a minimum level then we will select that option.
+        2. Thompson Sampling
+
+    The Multi-Armed Bandit Problem : used to train robot dogs to walk using reinforcement learning. finding the best outcome out of many options available. 
+        1. We have d arms. for example, arms are ads that we display to users each time they connect to a web page.
+        2. each time a user connects to this web page, that makes a round.
+        3. At each round n, we choose one ad to display to the user.
+        4. At each round n, ad i gives reward. 1 if the user clicks on the ad i, 0 if the user didn't.
+        5. our goal is to maximize the total reward we get over many rounds.
+
