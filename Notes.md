@@ -71,5 +71,6 @@ Natural Language Processing
     Exampels
         1. if / else rules for chatbots
         2. Audio frequency components and analysis for speech recognition
-        3. Bag-of-words model for classification.
+        3. Bag-of-words model (classification)
+        4. CNN for text recognition (classification)
         
