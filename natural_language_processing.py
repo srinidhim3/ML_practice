@@ -47,3 +47,34 @@ cm = confusion_matrix(y_test, y_pred)
 print(cm)
 acs = accuracy_score(y_test, y_pred)
 print(acs)
+
+#Predicting if a single review
+#Positive review
+new_review = 'I love this restaurant so much'
+new_review = re.sub('[^a-zA-Z]', ' ', new_review)
+new_review = new_review.lower()
+new_review = new_review.split()
+ps = PorterStemmer()
+all_stopwords = stopwords.words('english')
+all_stopwords.remove('not')
+new_review = [ps.stem(word) for word in new_review if not word in set(all_stopwords)]
+new_review = ' '.join(new_review)
+new_corpus = [new_review]
+new_X_test = cv.transform(new_corpus).toarray()
+new_y_pred = classifier.predict(new_X_test)
+print(new_y_pred)
+
+#### Negative review
+new_review = 'I hate this restaurant so much'
+new_review = re.sub('[^a-zA-Z]', ' ', new_review)
+new_review = new_review.lower()
+new_review = new_review.split()
+ps = PorterStemmer()
+all_stopwords = stopwords.words('english')
+all_stopwords.remove('not')
+new_review = [ps.stem(word) for word in new_review if not word in set(all_stopwords)]
+new_review = ' '.join(new_review)
+new_corpus = [new_review]
+new_X_test = cv.transform(new_corpus).toarray()
+new_y_pred = classifier.predict(new_X_test)
+print(new_y_pred)
