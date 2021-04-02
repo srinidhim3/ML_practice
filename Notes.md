@@ -82,3 +82,12 @@ Deep Learning is the most exciting and powerful branch of Machine Learning. Deep
     Self Organizing Maps for Feature Extraction
     Deep Boltzmann Machines for Recommendation Systems
     Auto Encoders for Recommendation Systems
+
+    Training the ANN with stochastic gradient descent:
+        step 1: randomly initialize the weights to small numbersclose to 0 but not 0.
+        step 2: input the first observation of your dataset in the input layer, each feature in one input node.
+        step 3: forward propagation from left to right the neurons are activated in a way that the impact of each neuron's activation is limited by the weights. propagate the activations until getting the predicted result y.
+        step 4 : compare the predicted result to the actual result. Measure the generated error.
+        step 5 : back-propagation from right to left the error is back propagated. update the weights according to how much they are responsible for the error. the learning rate decides by how much we update the weights.
+        step 6 : repeat steps 1 to 5 and update the weights after each observation (Reinforcement learning). or repeat steps 1 to 5 and update the weights only after a batch of observations (Batch learning)
+        step 7 : when the whole training set passed through the ANN, that makes an epoch. Redo more epochs.
