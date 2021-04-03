@@ -91,3 +91,15 @@ Deep Learning is the most exciting and powerful branch of Machine Learning. Deep
         step 5 : back-propagation from right to left the error is back propagated. update the weights according to how much they are responsible for the error. the learning rate decides by how much we update the weights.
         step 6 : repeat steps 1 to 5 and update the weights after each observation (Reinforcement learning). or repeat steps 1 to 5 and update the weights only after a batch of observations (Batch learning)
         step 7 : when the whole training set passed through the ANN, that makes an epoch. Redo more epochs.
+
+Convolutional Neural Networks : used in image recognition.
+    Step 1 : Convolution - find feature in image using feature detector and produce feature map.
+                ReLu Layer - apply rectifier function on convolution layer to reduce the linearity of the images. Because images have lot of non linearity data.
+    Step 2 : Max pooling - Spacial invariance. taking the max/sum value after grouping pixels data. this will result in reducing the number of features going into network. This will help in reducing the over fitting. If mean value is considered then its called sub-sampling.
+    Step 3 : Flattening - put data from matrix to one column (long vector) which inturn becomes one feature to feed into ANN.
+    Step 4 : Full Connection - ANN
+
+    Softmax and cross-entropy : its another way to calculate last function. if there are multiple output neuron then probability adding up to 1 between their output is less. hence we use softmax equation to normalize the probability so that the sum will be 1. if there are two NN and one of them is out performing another at every instance. Comparing these two NN there can be 
+        1. classification error which is either true or false kind of output. These is not a great way to compare the two NN.
+        2. Mean Squared Error is taking the sum of squared errors and then just take the average across observations. This is more accurate in comparing two NN.
+        3. Cross-Entropy is a great way to compare beacuse its based on logarithm. Hence the tiny variation will be captured. This is where mean squared error will fail to capture the small adjustments.Mean squared is good for regression, and cross-entropy is good for classification.
