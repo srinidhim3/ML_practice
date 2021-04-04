@@ -103,3 +103,22 @@ Convolutional Neural Networks : used in image recognition.
         1. classification error which is either true or false kind of output. These is not a great way to compare the two NN.
         2. Mean Squared Error is taking the sum of squared errors and then just take the average across observations. This is more accurate in comparing two NN.
         3. Cross-Entropy is a great way to compare beacuse its based on logarithm. Hence the tiny variation will be captured. This is where mean squared error will fail to capture the small adjustments.Mean squared is good for regression, and cross-entropy is good for classification.
+
+Dimensionality Reduction : There are two types of Dimensionality Reduction techniques
+    1. Feature Selection : Feature Selection techniques are Backward Elimination, Forward Selection, Bidirectional Elimination, Score Comparison and more. We covered these techniques in Part 2 - Regression.
+    2. Feature Extraction : In this part we will cover the following Feature Extraction techniques:
+        1. Principal Component Analysis (PCA)
+        2. Linear Discriminant Analysis (LDA)
+        3. Kernel PCA
+        4. Quadratic Discriminant Analysis (QDA)
+
+Principal component analysis (PCA): unsupervised learning and used in below areas.
+    1. Noise filtering
+    2. Visualization
+    3. Feature Extraction
+    4. Stock market analysis
+    5. Gene data analysis
+
+    Goal of PCA is to identify patterns in data and detect the correlation between variables. Reduce the dimensions of a d-dimensional dataset by projecting it onto a k-dimension subspace where k < d
+
+    
